@@ -1,7 +1,7 @@
 import React from 'react'
-import { View, Text, ScrollView } from 'react-native'
+import { View, Text, ScrollView, TouchableOpacity } from 'react-native'
 import styled from "styled-components/native";
-import { Avatar } from "react-native-paper";
+import { Avatar, Button } from "react-native-paper";
 
 import { SigninForm } from "../components/SigninForm";
 import { SafeArea } from "../../components/utilities/SafeArea";
@@ -27,7 +27,7 @@ const NameTitle = styled(Text)`
 
 const SigninContainer = styled(ScrollView)`
     padding: ${(props) => props.theme.space[3]}
-    background-color: ${(props) => props.theme.colors.bg.secondary}
+    background-color: ${(props) => props.theme.colors.bg.secondary};
 `;
 
 const SigninImageContainer = styled(View)`
@@ -36,6 +36,30 @@ const SigninImageContainer = styled(View)`
 
 const Space = styled(View)`
     height: ${(props) => props.theme.space[5]}
+`;
+
+const SigninButtun = styled(Button)`
+    background-color: ${(props) => props.theme.colors.ui.primary};
+    padding: ${(props) => props.theme.space[2]};
+    border-radius: 0px;
+    margin: ${(props) => props.theme.space[3]}
+`;
+
+const SigninText = styled(Text)`
+    font-size: ${(props) => props.theme.fontSizes.body}
+    font-weight: ${(props) => props.theme.fontWeights.bold};
+    color: ${(props) => props.theme.colors.text.secondary};
+`;
+
+const SigninTextContainer = styled(View)`
+    flex-direction: row;
+    justify-content: center;
+`;
+
+const SigninTouchableOpacityText = styled(Text)`
+    font-size: ${(props) => props.theme.fontSizes.body}
+    color: ${(props) => props.theme.colors.ui.primary};
+    font-weight: ${(props) => props.theme.fontWeights.bold};
 `;
 
 const Title = styled(Text)`
@@ -58,6 +82,14 @@ const Signin = () => {
                 </SigninImageContainer>
                 <SigninForm/>
             </SigninContainer>
+            <SigninTextContainer>
+                <SigninText>Dont have an account?</SigninText>
+                <TouchableOpacity>
+                    <SigninTouchableOpacityText> Register</SigninTouchableOpacityText>
+                </TouchableOpacity>
+            </SigninTextContainer>
+            <SigninButtun mode="contained">Login</SigninButtun> 
+            <LittleSpace/>
         </SafeArea>
     )
 }

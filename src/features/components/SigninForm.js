@@ -15,14 +15,11 @@ const SigninText = styled(Text)`
 const SigninButtun = styled(Button)`
     background-color: ${(props) => props.theme.colors.ui.primary};
     padding: ${(props) => props.theme.space[2]};
-    
-
 `;
 
 const Textinput = styled(TextInput)`
     background-color: ${(props) => props.theme.colors.bg.secondary}
 `;
-
 
 export const SigninForm = () => {
     return (
@@ -33,7 +30,7 @@ export const SigninForm = () => {
             <TouchableOpacity>
                 <SigninText>Forgot Password?</SigninText>
             </TouchableOpacity>
-            <SigninButtun mode="contained">Login</SigninButtun> 
+            {/* <SigninButtun mode="contained">Login</SigninButtun>  */}
         </>
     )
 }
