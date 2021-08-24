@@ -3,8 +3,8 @@ import { View, Text, ScrollView } from 'react-native'
 import styled from "styled-components/native";
 import { Button } from "react-native-paper";
 
-import { SafeArea } from "../../components/utilities/SafeArea";
-import { CreateElectionForm } from "../components/CreateElectionForm";
+import { SafeArea } from "../../../components/utilities/SafeArea";
+import { CreateElectionForm } from "../../components/CreateElectionForm";
 
 const CreateElectionContainer = styled(ScrollView)`
     padding: ${(props) => props.theme.space[3]};

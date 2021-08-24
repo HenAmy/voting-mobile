@@ -14,7 +14,7 @@ const Textinput = styled(TextInput)`
 export const CreateElectionForm = () => {
     return (
         <>
-            <Space/>
+            {/* <Space/> */}
             <Textinput label="Election Name" mode="flat" selectionColor="#000" underlineColor="#000" outlineColor="#000"/>
             <Space/>
             <Textinput label="Start Date" mode="flat" selectionColor="#000" underlineColor="#000" outlineColor="#000"/>

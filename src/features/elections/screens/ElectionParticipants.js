@@ -3,8 +3,8 @@ import { View, Text, ScrollView } from 'react-native'
 import styled from "styled-components/native";
 import { Button } from "react-native-paper";
 
-import { SafeArea } from "../../components/utilities/SafeArea";
-import { ListItemDelete } from "../components/ListItemDelete";
+import { SafeArea } from "../../../components/utilities/SafeArea";
+import { ListItemDelete } from "../../../features/components/ListItemDelete";
 
 const Caption = styled(Text)`
     font-size: ${(props) => props.theme.fontSizes.body}

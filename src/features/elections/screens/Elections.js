@@ -2,8 +2,8 @@ import React from 'react'
 import styled from "styled-components/native";
 import { View, Text, FlatList} from 'react-native'
 
-import { SafeArea } from "../../components/utilities/SafeArea";
-import { ListItem } from "../components/ListItem";
+import { SafeArea } from "../../../components/utilities/SafeArea";
+import { ListItem } from "../../components/ListItem";
 
 const elections = [
     {
@@ -80,7 +80,7 @@ const Elections = () => {
                         <ListItem title={item.title} organisation={item.organisation}/>
                     )
                 } }
-                keyExtractor={(item) => item.id}
+                keyExtractor={(item) => item.title}
             />
         </SafeArea>
     )

@@ -1,7 +1,6 @@
 export const fonts = {
-  body: "Nexa_400Regular",
-  heading: "Lato_400Regular",
-  monospace: "Oswald_400Regular",
+  heading: "Nexa_Bold",
+  body: "Nexa_Light",
 };
 
 export const fontWeights = {
