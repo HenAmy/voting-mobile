@@ -11,6 +11,7 @@ import Elections from "./src/features/elections/screens/Elections";
 import Participant from './src/features/participants/screens/Participant';
 import CreateElection from "./src/features/elections/screens/createElection";
 import ElectionParticipants from "./src/features/elections/screens/ElectionParticipants";
+import LoaderComponent from "./src/features/elections/components/LoaderComponent";
 
 const Drawer = createDrawerNavigator();
 
@@ -41,6 +42,7 @@ export default function App() {
           <Drawer.Screen name="CreateElection" component={CreateElection} />
           <Drawer.Screen name="ElectionParticipants" component={ElectionParticipants} />
           <Drawer.Screen name="Participant" component={Participant} />
+          <Drawer.Screen name="Loader" component={LoaderComponent} options={{ headerShown: false }}/>
         </Drawer.Navigator>
       </NavigationContainer>
     </ThemeProvider>
